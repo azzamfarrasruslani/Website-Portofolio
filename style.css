@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "IBM Plex Mono";
+}
+
+body {
+  background-color: bisque;
+  min-height: 4000px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 2%;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar .logo img {
+  width: 6rem;
+}
+
+/* hero section */
+.hero {
+  display: block;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("gambar/6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content {
+  padding: 4rem 5%;
+  margin-left: 1rem;
+}
+
+.hero .content h1 {
+  font-family: "Montserrat";
+  font-size: 5rem;
+  color: #ffbd59;
+}
+
+.hero .content h2 {
+  font-family: "IBM Plex Mono";
+  font-size: 2rem;
+  color: #f8f6f4;
+  font-weight: 500;
+  line-height: 1px;
+}
+
+.wrapper {
+  display: flex;
+}
+.wrapper .first-text {
+  font-size: 2rem;
+  color: #fff;
+}
+.wrapper .sec-texts {
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+.sec-texts li {
+  position: relative;
+  top: 0;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  list-style: none;
+  padding: 0 20px;
+  animation: slide 12s steps(1) infinite, colorful 6s infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.sec-texts li span {
+  position: relative;
+}
+.sec-texts li span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  background: #c6b1b8;
+  border-left: 2px solid rgb(255, 255, 255);
+  animation: typing 2s steps(10) infinite alternate;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
