@@ -7,8 +7,12 @@
   font-family: "IBM Plex Mono";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: bisque;
+  background-color: #37167d;
   min-height: 4000px;
 }
 
@@ -18,14 +22,44 @@ body {
   justify-content: space-between;
   padding: 1px 2%;
   position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
+  right: 1rem;
+  left: 1rem;
+  top: 1rem;
   z-index: 9999;
+  /* background-color: rgba(188, 255, 226, 0.5);
+  border-radius: 5rem; */
 }
 
 .navbar .logo img {
   width: 6rem;
+}
+
+.navbar .navbar-nav a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 2rem 1.3rem;
+  color: #f8f6f4;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ffbd59;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid;
+  transform: scaley(0);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scale(0.5);
 }
 
 /* hero section */
@@ -34,7 +68,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("gambar/6.svg");
+  background-image: url("gambar/12.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,12 +77,12 @@ body {
 
 .hero .content {
   padding: 4rem 5%;
-  margin-left: 1rem;
+  margin-left: 7rem;
 }
 
 .hero .content h1 {
-  font-family: "Montserrat";
-  font-size: 5rem;
+  font-family: "Poppins";
+  font-size: 6rem;
   color: #ffbd59;
 }
 
@@ -96,7 +130,7 @@ body {
   left: 0;
   width: 400px;
   height: 300px;
-  background: #c6b1b8;
+  background: #37167d;
   border-left: 2px solid rgb(255, 255, 255);
   animation: typing 2s steps(10) infinite alternate;
 }
@@ -105,4 +139,14 @@ body {
     left: 100%;
     margin: 0 -35px 0 35px;
   }
+}
+
+.hero .content .cta {
+  background-color: #ffbd59;
+  padding: 0.6rem 3rem;
+  margin-top: 1rem;
+  display: inline-block;
+  font-family: "Poppins";
+  color: #f8f6f4;
+  border-radius: 1rem;
 }
