@@ -159,44 +159,60 @@ body {
 
 .about h2 {
   text-align: left;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #ffbd59;
   font-family: "Poppins";
+  text-align: center;
 }
 
 .about p {
+  text-align: center;
   color: #f8f6f4;
   max-width: 30rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
+  margin: auto;
 }
 
 .about .row {
-  justify-content: center;
+  display: flex;
 }
 
-.about .row h3 {
+.about .row .about-img {
+  flex: 1rem 1 4rem;
+}
+
+.about .row .about-img img {
+  width: 30rem;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 4rem 7rem;
+}
+
+.about .row .content h3 {
   color: #ffbd59;
   font-family: "Poppins";
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.about .row ul {
+.about .row .content ul {
   color: #f8f6f4;
   padding: 1rem 1rem;
 }
 
-.about .row ul li {
+.about .row .content ul li {
   font-family: "Poppins";
 }
 
-.about .row .cv {
+.about .row .content .cv {
   background-color: #ffbd59;
   border-radius: 1rem;
   display: inline-block;
   font-family: "Poppins";
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.3rem 1rem;
   margin-top: 1rem;
   color: #f8f6f4;
